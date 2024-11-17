@@ -21,7 +21,7 @@ docker system prune -f
 
 # Build, (re)create, start, and attach to containers for a service
 echo "🐳 Launching Docker Compose..."
-docker-compose up -d
+docker-compose up --build
 
 # Step 4: Wait for the services to initialize
 echo "⏳ Waiting for services to start..."
